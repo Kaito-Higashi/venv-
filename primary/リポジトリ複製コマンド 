@@ -1,0 +1,15 @@
+＃Githubで[新しいリポジトリ]を作成する
+
+＃コピーしたいリポジトリをクローン
+git clone [クローンしたいリポジトリのURL][新しいプロジェクト名(新しいリポジトリと同じ名前)]
+
+＃クローンしたリポジトリを初期化
+cd [新しいリポジトリ]
+rm -rf .git
+git init
+
+＃初期化後、プッシュ
+git add .
+git commit -m "Initial commit"
+git remote add origin git@github.com:b.git
+git push
