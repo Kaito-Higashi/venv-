@@ -1,0 +1,17 @@
+＃新しい環境の作成、[]は任意で作成
+mkdir [project name]
+cd [project name]
+python3 -m venv [env name]
+ls
+
+＃仮想環境ON
+source [env name]/bin/activate
+
+＃仮想環境OFF
+deactivate
+
+＃パッケージ一覧をrequirements.txtに保存
+pip freeze > requirements.txt
+
+＃requirements.txtのパッケージをインストール
+pip install -r requirements.txt
