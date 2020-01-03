@@ -1,11 +1,12 @@
 ＃新しい環境の作成、[]は任意で作成
 mkdir [project name]
 cd [project name]
-python3 -m venv [env name]
-ls
+
+#GitForDesktopから開いたらここから。venvという仮想環境用フォルダを作っている
+python3 -m venv venv
 
 ＃仮想環境ON
-source [env name]/bin/activate
+source venv/bin/activate
 
 ＃仮想環境OFF
 deactivate
